@@ -1,0 +1,42 @@
+img.pinIconInsideFeber {
+    position: absolute;
+    top: -8px;
+    left: 2px;
+}
+#patient,#illness{
+    background-image:
+    linear-gradient(45deg,transparent 50%, white 50%), 
+    linear-gradient(135deg, white 50%,transparent 50%),
+    linear-gradient(to right, black, black); 
+    background-position: 
+    calc(100% - 17px) calc(1em),
+    calc(100% - 9px) calc(1em),
+    100% 0px;
+  background-size:
+    8px 8px,
+    8px 8px,
+    2.5em 2.5em;
+    
+      
+    background-repeat: no-repeat;
+  }
+  .rest_btn {
+    background-image: url(https://cloudapp.wipro.com/MyMedical/images/reset_normal.png);
+    float: left;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    border: 0;
+}
+.add_btn {
+    background-image: url(https://cloudapp.wipro.com/MyMedical/images/add_normal.png);
+    float: left;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 28px;
+    right: 0px;
+    border: 0;
+}

@@ -1,0 +1,229 @@
+<div class="row">
+  
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="container-fluid">
+        
+            <div class="panel" style="background-color:transparent">
+                <div class="row">
+                    <div class="panel-body">
+                  
+                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                        
+                                                    
+                                    <div style="white-space:nowrap">
+      
+                                        <div style="display:inline;">
+                                            <img src="assets/images/Medicalicon.png" style="margin-right:20px">
+                                        </div>
+                                    
+                                        <div style="display:inline; white-space:nowrap;font-weight: 600;margin-right:5px"> 
+                                            CREATE      </div>
+                                    
+                                    </div>
+                                
+                                
+                        </div>
+                        
+                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" style="float:right;white-space:nowrap;">
+                            <div style="display:inline;float:right">
+                                <img src="assets/images/notice.png" >
+                            </div>
+                            
+                        </div>
+                        
+                        
+      
+                      
+                  </div>
+                </div>
+                <div class="row" >
+                    
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center " style="background-color:#E97B00;color:white;padding: 5px 0 5px 0;">
+                        <p style="margin:auto"> UTILIZATION DETAILS</p>
+                    </div>
+                    
+                </div>
+                <div class="row" style="background-color:white;padding: 20px 0 20px 0">
+                    
+                    <div class="col-sm-6">
+                            <div class="col-xs-6 text-center">
+                                <p style="margin:auto">TOTAL AMOUNT</p>
+                                <div class="col-xs-12 text-center" style="border: 1px solid silver;">
+                                    <p style="margin:auto">INR 30,000</p>
+                        
+                                    </div>
+                        
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                        <p style="margin:auto">CLEARED AMOUNT</p>
+                                        <div class="col-xs-12 text-center" style="background-color: silver;">
+                                            <p style="margin:auto">INR 0,000</p>
+                                
+                                            </div>
+                        
+                                    </div>
+                        
+                    </div>
+                    <div class="col-sm-6">
+                            <div class="col-xs-6 text-center">
+                                    <p style="margin:auto">CLAIMED AMOUNT UNDER PROCESS</p>
+                                    <div class="col-xs-12 text-center" style="border: 1px solid silver;">
+                                        <p style="margin:auto">INR 5,000</p>
+                            
+                                        </div>
+                        
+                                </div> 
+                                <div class="col-xs-6 text-center">
+                                        <p style="margin:auto">BALANCE AMOUNT</p>
+                                        <div class="col-xs-12 text-center" style="background-color:#FF9E00">
+                                            <p style="margin:auto">INR 25,000</p>
+                                
+                                            </div>
+                        
+                                    </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    
+                    <div class="col-xs-3 text-center" style="background-color:#E97B00;color:white;padding: 5px 0 5px 0;margin: 10px 10px 0 0">
+                        <p style="margin:auto"> SELECT EXPENSE MONTH </p>
+  
+                    </div>
+                    
+                    <div class="col-xs-3"style="margin:10px">
+                        <select class="form-control"  id="ddmm">
+                            <option disabled selected>Select Month</option>
+                            <option>Apr-18</option>
+                            <option>May-18</option>
+                            <option>Jun-18</option>
+                            <option>Jul-18</option>
+                            <option>Aug-18</option>
+                            <option>Sep-18</option>
+                            <option>Oct-18</option>
+                            <option>Nov-18</option>
+                            <option>Dec-18</option>
+                            <option>Jan-19</option>
+                            <option>Feb-19</option>
+                            <option>Mar-19</option>
+
+                        </select>
+                    </div>
+                    
+                  
+                    
+                </div>
+                <div class="row panel" style="margin:10px;background-color:white;height: 50px;position: relative;">
+                    <img class="pinIconInsideFeber" src="assets/images/attach-icon.png">
+                <p style="margin:15px">
+                    Employees are requested not to submit bills which are dated prior to their date of joining.
+                </p></div>
+                <div class="row" style="margin:3px">
+                    
+                            <div class="container-fluid" style="background-color:white;margin:5px ">
+                                    <p style="margin:15px">SELECT CLAIM TYPE & PROVIDE DETAILS </p>
+                                    <div class="row" style="margin:15px">
+                                            <div class="container-fluid" style="background-color: #E5E6EA;padding: 0;">
+                                                <div class="row" style="margin:1px">
+                                            <div class="col-xs-3 text-center"  routerLink="domiciliary" [ngClass]="{notSelected:!Domiciliary,ifSelected:Domiciliary}" 
+                                            (click)="Domiciliary=true;Medical_chest=false;Spectacles=false"
+                                            style="padding: 10px;position: relative;">
+                                                <img src="assets/images/5j.png">
+                                                <p style="color: white;font-weight:600">Domiciliary</p>
+                                                <img src="assets/images/navd.jpg" style="position:absolute;top:100%;" *ngIf="Domiciliary">
+
+                                            </div>
+                                            <div class="col-xs-3 text-center" routerLink="medical_chest"[ngClass]="{notSelected:!Medical_chest,ifSelected:Medical_chest}" 
+                                            (click)="Domiciliary=false;Medical_chest=true;Spectacles=false"
+                                            style="padding: 10px;position: relative;">
+                                                <img src="assets/images/1j.png">
+                                                <p style="color: white;font-weight:600">Medical chest & Parental Insurance</p>
+                                                <img src="assets/images/navd.jpg" style="position:absolute;top:100%;" *ngIf="Medical_chest">
+
+                                            </div>
+                                            <div class="col-xs-3 text-center" routerLink="spectacles"[ngClass]="{notSelected:!Spectacles,ifSelected:Spectacles}" 
+                                            (click)="Domiciliary=false;Medical_chest=false;Spectacles=true"
+                                            style="padding: 10px;position: relative;">
+                                                <img src="assets/images/1j.png">
+                                                <p style="color: white;font-weight:600">Spectacles</p>
+                                                <img src="assets/images/navd.jpg" style="position:absolute;top:100%;" *ngIf="Spectacles">
+
+                                            </div>
+                                            <div class="col-xs-3 notSelected"></div>
+                                        </div>
+                                        <!-- <app-domiciliary></app-domiciliary> -->
+                                        <!-- <app-medical-chest></app-medical-chest> -->
+                                        <!-- <app-spectacles></app-spectacles> -->
+                                        <router-outlet></router-outlet>
+                                        
+                                        
+                                        </div>
+
+
+
+
+                                           
+                                            
+                                        </div>
+                                        <!--Upload Document-->
+                                        <div class="row"  style="margin:15px">
+                                        <div class="container-fluid" style="background-color:rgba(249, 176, 58, 0.29);padding: 20px">
+                                            <p style="font-weight:800">UPLOAD DOCUMENT</p>
+                                            <p style="font-weight:800;color: gray">(You don't need to submit hard copy of your supporting anymore! Just upload the softcopy of the bills).</p>
+                                            <div class="row">
+                                                
+                                                <div class="col-xs-6 ">
+                                                    <p style="font-weight:800">Upload prescription</p>
+                                                   
+                                                        <div style="height: 40px;width:350px;background-color: white">
+                                                            <div class="text-center" style="background-color:black;float:right;
+                                                            height:40px;width:80px;position: relative;border-radius:0 8px 8px 0  ">
+                                                            <P style="color:white;margin-top:10px">BROWSE</P>
+                                                            <input type="file" class="upload"/>
+
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-xs-6 ">
+                                                    <p style="font-weight:800">Upload receipt</p>
+                                                    <div class="inputFileUploadCellInputupload">
+                                                                                             
+                                                        <div style="height: 40px;width:350px;background-color: white">
+                                                                <div class="text-center" style="background-color:black;float:right;
+                                                                height:40px;width:80px;position: relative;border-radius:0 8px 8px 0  ">
+                                                                <P style="color:white;margin-top:10px">BROWSE</P>
+                                                                <input type="file" class="upload"/>
+    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                            </div>
+                                            <div class="row">
+                                                <p style="color:red;margin-left:15px">
+                                                        Ensure that the scanned copies/photographed images are clear, legible and not more than 5 MB. <br>
+                                                        The minimum resolution of the copies should not be less than 200 pixels and uploaded only in JPEG, TIFF and PDF formats. <br>
+                                                        Scan or take a photo of one receipt in one page only. Documents uploaded should not be password protected. <br>
+                                                        Please check the naming convention before uploading the file(Eg: Multiple dots. should not be present)</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    
+                                </div>
+                  
+                    
+                
+            
+                
+                </div>
+                
+          </div>
+      
+ 
+    </div>
+   
+    
+  </div>
+  
+</div>

@@ -1,0 +1,13 @@
+.ifClick{
+    color:rgb(253, 250, 250) !important;
+    background-color: rgb(59, 58, 58) !important;
+
+    font-weight: 600;
+    
+
+}
+.elseClick{
+    color: black !important;
+    font-weight: 600;
+
+}

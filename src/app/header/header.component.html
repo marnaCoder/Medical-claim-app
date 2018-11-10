@@ -1,0 +1,31 @@
+
+<div class="navbar navbar-default" style="background-color:#FAA727;margin-bottom: 0">
+  
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <a class="navbar-brand" routerLink="/create" style="color:whitesmoke;font-weight: bolder">myMedical Claim</a>
+  
+      </div>
+      <div class="navbar-default">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a routerLink="/create"  [ngClass]="{elseClick:!create,ifClick:create}" 
+            (click)="create=true;statement=false;view=false">CREATE</a></li>
+
+          <li><a routerLink="/statement" [ngClass]="{elseClick:!statement,ifClick:statement}" 
+            (click)="statement=true;create=false;view=false">STATEMENT</a></li>
+
+          <li><a  routerLink="/view" [ngClass]="{elseClick:!view,ifClick:view}" 
+            (click)="view=true;create=false;statement=false">VIEW/MODIFY</a></li>
+  
+  
+        </ul>
+      </div>
+        
+    </div>
+    
+   
+  </div>
+  
+  
+  
+  

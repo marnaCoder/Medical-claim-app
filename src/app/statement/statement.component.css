@@ -1,0 +1,19 @@
+table{
+    border-color: rgb(230, 227, 227);
+    background-color: whitesmoke
+}
+td{
+    width: 180px;
+    border-right: 1px solid rgba(85, 85, 85,0.5);
+    border-collapse: collapse;
+}
+.col6{
+    width:300px;
+}
+tr{
+    height: 50px;
+}
+.col7{
+    border-right: 1px solid rgb(230, 227, 227);
+
+}

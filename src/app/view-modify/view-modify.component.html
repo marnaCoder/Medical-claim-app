@@ -1,0 +1,165 @@
+<div class="row">
+  
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="container-fluid">
+          
+              <div class="panel" style="background-color:transparent">
+                  <div class="row">
+                      <div class="panel-body">
+                    
+                          <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                          
+                                                      
+                                      <div style="white-space:nowrap">
+        
+                                          <div style="display:inline;">
+                                              <img src="assets/images/view.png" style="margin-right:20px">
+                                          </div>
+                                      
+                                          <div style="display:inline; white-space:nowrap;font-weight: 600;margin-right:5px"> 
+                                              VIEW/MODIFY      </div>
+                                      
+                                      </div>
+                                  
+                                  
+                          </div>
+                          
+                          <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" style="float:right;white-space:nowrap;">
+                              <div style="display:inline;float:right">
+                                  <img src="assets/images/notice.png" >
+                              </div>
+                              
+                          </div>
+                          
+                          
+        
+                        
+                    </div>
+                  </div>
+                  <div class="row"  style="background-color:rgb(234, 236, 236);border-bottom:1px solid black;margin: 5px">
+                    
+                    <div class="col-xs-3" style="margin:10px 0 0 5px">
+                      <label for="start"> START DATE</label>
+                      <div style="position:relative">
+                      <input type="date" class="form-control"value="2018-04-01" name="start" style="width:300px">
+                      <img src="assets/images/date.png" style="position:absolute;top:2px;left:235px;pointer-events:none">
+                    </div>
+                    </div>
+                    <div class="col-xs-3" style="margin:10px 0 0 5px">
+                        <label for="end"> END DATE</label>
+                        <div style="position:relative">
+                        <input type="date" class="form-control"value="{{b}}" name="end" style="width:300px">
+                        <img src="assets/images/date.png" style="position:absolute;top:2px;left:235px;pointer-events:none">
+                      </div>
+                      </div>
+                      <div class="col-xs-3" style="margin:10px 0 0 5px">
+                          <label for="status"> STATUS</label>
+                          <select class="form-control" style="margin:5px;background-color: white;width: 300px" id="status"  name="status" >
+                              <option selected disabled>Select All</option>
+                              <option>Saved</option>
+                              <option >Submited</option>
+                              <option >Payment pending with wividus</option>
+                              <option>Payment Cleared</option>
+                              <option>Rejected</option>
+                              <option>On hold</option>
+                              </select>
+
+                        </div>
+                        <div class="col-xs-2" style="margin:10px 0 0 5px">
+                            <button class="form-control" style="background-color:black;color:white;width:50px;margin-top:30px">Go</button>
+
+                          </div>
+
+                    
+                  </div>
+                  <br>
+                  <div class="row" >
+                    
+                      <div class="col-xs-2 col-sm-2  text-center " style="background-color:#E97B00;color:white;padding: 5px 0 5px 0;margin-left:14px ">
+                          <p style="margin:auto"> VIEW ALL CLAIMS
+                            </p>
+                      </div>
+                      
+                  </div>
+                  <div class="row" style="background-color:white;margin-top: 0">
+                    
+                    <div class="row "style="margin:15px;border-radius:5px;border:1px solid rgb(179, 177, 177);padding:7px 0 7px 0">
+                     
+                     <div class="col-xs-1 col-sm-1 text-center">
+                       <p style="margin:auto;font-weight: 500">CLAIM TYPE</p>
+                     </div>
+                     <div class="col-xs-1 col-sm-1 text-center">
+                        <p style="margin:auto;font-weight: 500">CLAIM NO</p>
+                      </div><div class="col-xs-2 col-sm-2 text-center">
+                          <p style="margin:auto;font-weight: 500">CREATED DATE</p>
+                        </div><div class="col-xs-2 col-sm-2 text-center">
+                            <p style="margin:auto;font-weight: 500">CLAIMED AMOUNT</p>
+                          </div><div class="col-xs-2 col-sm-2 text-center">
+                              <p style="margin:auto;font-weight: 500">APPROVED AMOUNT</p>
+                            </div><div class="col-xs-2 col-sm-2 text-center">
+                                <p style="margin:auto;font-weight: 500">STATUS</p>
+                              </div><div class="col-xs-2 col-sm-2 text-center">
+                                  <p style="margin:auto;font-weight: 500">ACTIONS</p>
+                                
+                     
+                    </div>
+                    
+                  </div>
+                  <div class="row "style="margin:15px;border-radius:5px;border:1px solid rgb(179, 177, 177);padding:7px 0 7px 0">
+                     
+                      <div class="col-xs-1 col-sm-1 text-center">
+                        <p style="margin:auto;font-weight: 500">MED</p>
+                      </div>
+                      <div class="col-xs-1 col-sm-1 text-center">
+                         <p style="margin:auto;font-weight: 500">1234567</p>
+                       </div><div class="col-xs-2 col-sm-2 text-center">
+                           <p style="margin:auto;font-weight: 500">03/10/2018</p>
+                         </div><div class="col-xs-2 col-sm-2 text-center">
+                             <p style="margin:auto;font-weight: 500">5000</p>
+                           </div><div class="col-xs-2 col-sm-2 text-center">
+                               <p style="margin:auto;font-weight: 500">0</p>
+                             </div><div class="col-xs-2 col-sm-2 text-center">
+
+                                 <p style="margin:auto;font-weight: 500">
+                                    <span class="dotSubmitted"></span>
+                                  Submitted</p>
+                               </div><div class="col-xs-2 col-sm-2 text-center">
+                                   <p style="margin:auto;font-weight: 500"><button style="width:100px;border:1px solid rgb(179, 177, 177)">
+                                    VIEW
+                                   </button></p>
+                                 
+                      
+                     </div>
+                     
+                   </div>
+                   <div class="row "style="margin:15px;border-radius:5px;border:1px solid rgb(179, 177, 177);padding:7px 0 7px 0">
+                     
+                      <div class="col-xs-1 col-sm-1 text-center">
+                        <p style="margin:auto;font-weight: 500">MED</p>
+                      </div>
+                      <div class="col-xs-1 col-sm-1 text-center">
+                         <p style="margin:auto;font-weight: 500">1344897</p>
+                       </div><div class="col-xs-2 col-sm-2 text-center">
+                           <p style="margin:auto;font-weight: 500">05/07/2018</p>
+                         </div><div class="col-xs-2 col-sm-2 text-center">
+                             <p style="margin:auto;font-weight: 500">1200</p>
+                           </div><div class="col-xs-2 col-sm-2 text-center">
+                               <p style="margin:auto;font-weight: 500">1200</p>
+                             </div><div class="col-xs-2 col-sm-2 text-center">
+                                 <p style="margin:auto;font-weight: 500"> <span class="dotCleared"></span>
+                                  Payment Cleared</p>
+                               </div><div class="col-xs-2 col-sm-2 text-center">
+                                   <p style="margin:auto;font-weight: 500"><button style="width:100px;border:1px solid rgb(179, 177, 177)">
+                                    VIEW
+                                   </button></p>
+                                 
+                      
+                     </div>
+                     
+                   </div>
+                  
+                  
+          </div>
+      </div>
+    </div>
+  </div>                  
